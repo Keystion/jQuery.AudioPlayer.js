@@ -7,11 +7,12 @@
 - 引入theme.default.css
 
 ```
-<script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
+<!-- Staticfile CDN -->
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>
 
-<!-- jQuery.AudioPlayer -->
-<link rel="stylesheet" href="theme.default.css">
-<script type="text/javascript" src="./jQuery.AudioPlayer.js"></script>
+<!-- jQuery.AudioPlayer.js -->
+<link rel="stylesheet" href="../src/theme.default.css">
+<script type="text/javascript" src="../src/jQuery.AudioPlayer.js"></script>
 
 <script type="text/javascript">
 $(function() {
@@ -145,3 +146,6 @@ AudioPlayer.play(function(data){
     }
 });
 ```
+
+
+或许你使用了，或许有一点bug，请提出宝贵的[issues](https://github.com/Keystion/jQuery.AudioPlayer.js/issues)，谢谢
