@@ -19,6 +19,7 @@
             background-color: #dcdcdc;
         }
     </style>
+    <p>音频文件来着豆瓣，如有侵权联系我，会尽快删除</p>
     <ul>
         <li><a href="javascript:;" data-url="http://mr3.doubanio.com/70d0968fb8312ade3f04c7e1d1d18d1f/1/fm/song/p1817677_128k.mp4">玩具</a></li>
         <li><a href="javascript:;" data-url="http://mr3.doubanio.com/4b130888ecac87585c7d9ce60eae8a41/0/fm/song/p2012589_128k.mp4">Si tu vois ma mère</a></li>
@@ -26,18 +27,20 @@
         <li><a href="javascript:;" data-url="http://mr1.doubanio.com/e97fa704e9982f15db4aa7c0053b2c96/0/fm/song/p1957270_128k.mp4">Warning Sign</a></li>
     </ul>
     <div id="audioWrap"></div>
-    <script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
 
-    <!-- jQuery.AudioPlayer -->
-    <link rel="stylesheet" href="theme.default.min.css">
-    <script type="text/javascript" src="./jQuery.AudioPlayer.js"></script>
+    <!-- Staticfile CDN -->
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- jQuery.AudioPlayer.js -->
+    <link rel="stylesheet" href="../src/theme.default.css">
+    <script type="text/javascript" src="../src/jQuery.AudioPlayer.js"></script>
     <script type="text/javascript">
     $(function() {
         var player = $.AudioPlayer;
         player.init({
             container: '#audioWrap'
             ,source: 'http://mr3.doubanio.com/70d0968fb8312ade3f04c7e1d1d18d1f/1/fm/song/p1817677_128k.mp4'
-            ,imagePath: './image'
+            ,imagePath: '../src/image'
             ,debuggers: false
             ,allowSeek: true
         });
