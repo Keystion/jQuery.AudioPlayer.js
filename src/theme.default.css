@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+#componentWrapper,
+#componentWrapper *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+#componentWrapper {
+    position: relative;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#componentWrapper .controls_toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-right: 1px solid #555;
+    border-right-color: rgba( 255, 255, 255, .1);
+    background-image: url(./image/player_bg2.png);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 1px 1px 6px #333;
+    box-shadow: 1px 1px 6px #333;
+    behavior: url(PIE.htc);
+    cursor: pointer;
+}
+
+#componentWrapper .controls_toggle img {
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 15px;
+    left: 50%;
+    top: 50%;
+    margin-left: -6px;
+    margin-top: -8px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#componentWrapper .player_mediaTime_current {
+    position: relative;
+    width: 60px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #111;
+    border-left: 1px solid rgba( 0, 0, 0, .25);
+    background-image: url(./image/player_bg2.png);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 1px 1px 6px #333;
+    box-shadow: 1px 1px 6px #333;
+    behavior: url(PIE.htc);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#componentWrapper .player_progress {
+    position: relative;
+    height: 40px;
+    background-image: url(./image/player_bg2.png);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 1px 1px 6px #333;
+    box-shadow: 1px 1px 6px #333;
+    behavior: url(PIE.htc);
+    cursor: pointer;
+    flex: 1;
+}
+
+#componentWrapper .progress_bg {
+    position: absolute;
+    height: 10px;
+    background: #222;
+    top: 15px;
+    left: 10px;
+    right: 10px;
+    -webkit-box-shadow: -1px -1px 0 rgba( 0, 0, 0, .5), 1px 1px 0 rgba( 255, 255, 255, .1);
+    box-shadow: -1px -1px 0 rgba( 0, 0, 0, .5), 1px 1px 0 rgba( 255, 255, 255, .1);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#componentWrapper .load_progress {
+    position: absolute;
+    height: 10px;
+    background: #444;
+    top: 15px;
+    left: 10px;
+    right: 10px;
+    width: 0px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#componentWrapper .play_progress {
+    position: absolute;
+    height: 10px;
+    background: #fff;
+    top: 15px;
+    left: 10px;
+    right: 10px;
+    width: 0px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#componentWrapper .player_progress_tooltip {
+    position: relative;
+    top: -10px;
+    width: 72px;
+    background: #333;
+    height: 16px;
+    display: none;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 3px #222;
+    box-shadow: 1px 1px 3px #222;
+    behavior: url(PIE.htc);
+}
+
+#componentWrapper .player_progress_tooltip p {
+    color: white;
+    font-size: 10px;
+    margin: 0;
+    line-height: 16px;
+}
+
+#componentWrapper .player_mediaTime_total {
+    position: relative;
+    width: 60px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #555;
+    border-right: 1px solid rgba( 255, 255, 255, .1);
+    background-image: url(./image/player_bg2.png);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 1px 1px 6px #333;
+    box-shadow: 1px 1px 6px #333;
+    behavior: url(PIE.htc);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#componentWrapper .player_volume_wrapper {
+    position: relative;
+    height: 40px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#componentWrapper .player_volume {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #111;
+    border-left-color: rgba( 0, 0, 0, .25);
+    background-image: url(./image/player_bg2.png);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 1px 1px 6px #333;
+    box-shadow: 1px 1px 6px #333;
+    behavior: url(PIE.htc);
+    cursor: pointer;
+}
+
+#componentWrapper .player_volume img {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-left: -9px;
+    margin-top: -8px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#componentWrapper .volume_seekbar {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-image: url(./image/player_bg2_vol.png);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 1px 1px 6px #333;
+    box-shadow: 1px 1px 6px #333;
+    behavior: url(PIE.htc);
+    /*display: none;*/
+    cursor: pointer;
+}
+
+#componentWrapper .volume_bg {
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    background: #222;
+    bottom: 15px;
+    left: 10px;
+    -webkit-box-shadow: -1px -1px 0 rgba( 0, 0, 0, .5), 1px 1px 0 rgba( 255, 255, 255, .1);
+    box-shadow: -1px -1px 0 rgba( 0, 0, 0, .5), 1px 1px 0 rgba( 255, 255, 255, .1);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#componentWrapper .volume_level {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    background: #fff;
+    bottom: 15px;
+    left: 10px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#componentWrapper .player_volume_tooltip {
+    position: relative;
+    left: -15px;
+    top: -4px;
+    width: 35px;
+    height: 16px;
+    background: #333;
+    display: none;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 3px #222;
+    box-shadow: 1px 1px 3px #222;
+    behavior: url(PIE.htc);
+}
+
+#componentWrapper .player_volume_tooltip p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 18px;
+}
