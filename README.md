@@ -2,9 +2,9 @@
 
 jQuery.AudioPlayer.js depends on an audio player of jQuery plugin.
 
-[Keystion.github.io/jQuery.AudioPlayer.js/](Keystion.github.io/jQuery.AudioPlayer.js/)
+[Keystion.github.io/jQuery.AudioPlayer.js/](https://keystion.github.io/jQuery.AudioPlayer.js/)
 
-Demo：[Keystion.github.io/jQuery.AudioPlayer.js/test/index.html](Keystion.github.io/jQuery.AudioPlayer.js/test/index.html)
+Demo：[Keystion.github.io/jQuery.AudioPlayer.js/test/index.html](https://Keystion.github.io/jQuery.AudioPlayer.js/test/index.html)
 
 ---
 
