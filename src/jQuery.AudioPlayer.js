@@ -2,8 +2,8 @@
  * jQuery.AudioPlayer.js
  * @Author Keystion
  * @Version 1.0.1
- * Created by Keystion on 2016-12-19
- * Update on 2017-01-06
+ * Created by Keystion on 2016-12-19. Update on 2017-01-06
+ * https://github.com/Keystion/jQuery.AudioPlayer.js
  */
 ;(function(jQuery){
     "use strict";
