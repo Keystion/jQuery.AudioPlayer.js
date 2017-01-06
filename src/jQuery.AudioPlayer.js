@@ -11,15 +11,16 @@
         options: {
             // open console log / 打开控制台日志
             debuggers: false
-            // container, default 'body' / 组件要放到什么地方，默认'body'
+            // The outer Dom ClassName/id, default 'body'
+            // 外部Dom ClassName / id，默认的“body”
             ,container: 'body'
             // audio source / 音频源
             ,source: ''
-            // 音频源文件 / image resources
+            // image resources / 图像资源
             ,imagePath: './image'
             // Determines whether or not the player is playing before dragging/判断拖拽之前是否正在播放
             ,seekNum: 0
-            // Whether can drag and drop / 是否可以拖拽
+            // Whether to support drag and drop, the default open: `true` / 是否支持拖拽，默认开启：`true`
             ,allowSeek: true
             // After can play TODO / 可以播放之后，做某些事情
             ,canplayCallback: null
@@ -29,6 +30,8 @@
             ,pauseCallback: null
             // After the drag TODO / 拖动之后，做某些事情
             ,timeupdateCallback: null
+            // After the drag, the callback function (`allowSeek: false`) / 拖动之后，回调函数（`allowSeek: false`）
+            ,seekedCallback: null
             // End of the play TODO / 播放结束之后，做某些事情
             ,endedCallback: null
             // After the mute TODO / 静音之后，做某些事情
