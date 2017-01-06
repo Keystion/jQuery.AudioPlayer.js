@@ -147,6 +147,15 @@ AudioPlayer.play(function(data){
 });
 ```
 
+
+#### Change log
+
+##### 2017.01.06
+
+- Add comments in English
+- Fix the window change audio download progress bar UI has not changed
+
+
 #### [issues](https://github.com/Keystion/jQuery.AudioPlayer.js/issues)
 
 或许你使用了，或许有一点bug，请提出宝贵的[issues](https://github.com/Keystion/jQuery.AudioPlayer.js/issues)，谢谢
