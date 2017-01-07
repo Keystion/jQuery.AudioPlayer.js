@@ -1,6 +1,6 @@
 # jQuery.AudioPlayer.js
 
-jQuery.AudioPlayer.js depends on an audio player of jQuery plugin.
+A audio player of jQuery plugin.
 
 [Keystion.github.io/jQuery.AudioPlayer.js/](https://keystion.github.io/jQuery.AudioPlayer.js/)
 
