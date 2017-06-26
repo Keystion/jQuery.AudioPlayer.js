@@ -24,8 +24,10 @@
             ,allowSeek: true
             // After can play TODO / 可以播放之后，做某些事情
             ,canplayCallback: null
-            // After searching for the audio TODO / 开始查找音频之后，做某些事情
+            // After searching for the audio TODO / 开始查找音频源之后，做某些事情
             ,onloadstartCallback: null
+            // 需要缓冲下一帧而停止，做某些事情
+            ,onwaitingCallback: null
             // After playback TODO / 播放之后，做某些事情
             ,playCallback: null
             // After the suspension TODO / 暂停之后，做某些事情
@@ -306,6 +308,13 @@
             _this.elements.audioDom.ontimeupdate = function() {
                 _this.log('ontimeupdate');
                 _this.timeupdate();
+            }
+
+            _this.elements.audioDom.onwaiting = function() {
+                _this.log('onwaiting');
+                if(typeof _this.options.onwaitingCallback == 'function'){
+                    _this.options.onwaitingCallback({'status': true});
+                }
             }
 
             // When the volume is changed

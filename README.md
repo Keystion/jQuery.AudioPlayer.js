@@ -50,6 +50,7 @@ Example:
 | **allowSeek** | *Boolean* | Whether to support drag and drop, the default open: `true` / 是否支持拖拽，默认开启：`true` |
 | **canplayCallback** | *function* | After can play TODO / 可以播放之后，做某些事情 |
 | **onloadstartCallback** | *function* | After searching for the audio TODO / 开始查找音频之后，做某些事情 |
+| **onwaitingCallback** | *function* | When the video because that need to be a frame buffer and stop / 当视频由于需要缓冲下一帧而停止 |
 | **playCallback** | *function* | After playback TODO / 播放之后，做某些事情 |
 | **pauseCallback** | *function* | After the suspension TODO / 暂停之后，做某些事情 |
 | **seekedCallback** | *function* | After the drag, the callback function (`allowSeek: false`) / 拖动之后，回调函数（`allowSeek: false`） |
@@ -173,6 +174,7 @@ AudioPlayer.play(function(data){
 ##### 2017.06.26
 
 - Add onloadstartCallback function
+- Add onwaitingCallback function
 
 
 #### [issues](https://github.com/Keystion/jQuery.AudioPlayer.js/issues)
