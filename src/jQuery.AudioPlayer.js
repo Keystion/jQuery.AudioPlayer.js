@@ -24,6 +24,8 @@
             ,allowSeek: true
             // After can play TODO / 可以播放之后，做某些事情
             ,canplayCallback: null
+            // After searching for the audio TODO / 开始查找音频之后，做某些事情
+            ,onloadstartCallback: null
             // After playback TODO / 播放之后，做某些事情
             ,playCallback: null
             // After the suspension TODO / 暂停之后，做某些事情
@@ -261,6 +263,9 @@
             // When the browser begins searching for the audio / 当浏览器开始查找音频时
             _this.elements.audioDom.onloadstart = function() {
                 _this.log('onloadstart');
+                if(typeof _this.options.onloadstartCallback == 'function'){
+                    _this.options.onloadstartCallback({'status': true});
+                }
             }
 
             // When the audio has begun or is no longer suspended / 当音频已开始或不再暂停时

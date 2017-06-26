@@ -49,6 +49,7 @@ Example:
 | **debuggers** | *Boolean* |open console log, default close 'false' / 打开控制台日志,默认关闭：`false` |
 | **allowSeek** | *Boolean* | Whether to support drag and drop, the default open: `true` / 是否支持拖拽，默认开启：`true` |
 | **canplayCallback** | *function* | After can play TODO / 可以播放之后，做某些事情 |
+| **onloadstartCallback** | *function* | After searching for the audio TODO / 开始查找音频之后，做某些事情 |
 | **playCallback** | *function* | After playback TODO / 播放之后，做某些事情 |
 | **pauseCallback** | *function* | After the suspension TODO / 暂停之后，做某些事情 |
 | **seekedCallback** | *function* | After the drag, the callback function (`allowSeek: false`) / 拖动之后，回调函数（`allowSeek: false`） |
@@ -168,6 +169,10 @@ AudioPlayer.play(function(data){
 
 - Add comments in English
 - Fix the window change audio download progress bar UI has not changed
+
+##### 2017.06.26
+
+- Add onloadstartCallback function
 
 
 #### [issues](https://github.com/Keystion/jQuery.AudioPlayer.js/issues)
