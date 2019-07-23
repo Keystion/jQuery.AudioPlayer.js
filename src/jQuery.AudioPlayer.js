@@ -336,13 +336,21 @@
         // Set the playback / 设置播放
         ,play: function(o) {
             var _this = this;
-            _this.elements.audioDom.play();
-            if (typeof o == 'function') {
-                o({'status': _this.elements.audioDom.play});
-            }
+            // https://developers.google.com/web/updates/2016/03/play-returns-promise
+            var canPlay = _this.elements.audioDom.play();
+            // 处理浏览器无法自动播放语音
+            if (canPlay !== undefined) {
+              canPlay.then(_ => {
+                if (typeof o == 'function') {
+                    o({'status': true});
+                }
 
-            if(typeof _this.options.playCallback == 'function'){
-                _this.options.playCallback({'status': _this.elements.audioDom.play});
+                if(typeof _this.options.playCallback == 'function'){
+                    _this.options.playCallback({'status': true});
+                }
+              }).catch(error => {
+                  _this.options.playCallback({'status': false});
+              });
             }
         }
         // Set the suspend / 设置暂停
