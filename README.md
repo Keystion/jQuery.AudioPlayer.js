@@ -159,7 +159,7 @@ Example:
 ```
 AudioPlayer.play(function(data){
     if(data.status){
-        alert('已静音');
+        alert('播放成功');
     }
 });
 ```
@@ -175,6 +175,10 @@ AudioPlayer.play(function(data){
 
 - Add onloadstartCallback function
 - Add onwaitingCallback function
+
+##### 2019.07.23
+
+- Fix The browser automatically play with speech, Unable to get return value.
 
 
 #### [issues](https://github.com/Keystion/jQuery.AudioPlayer.js/issues)
